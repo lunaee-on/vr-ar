@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Reality and Augmented Reality</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="main-title">Virtual Reality and Augmented Reality</h1>
+
+    <div class="container">
+        <div class="section" onclick="showDetails('vrDetails')">
+            Virtual Reality (VR)
+            <div id="vrDetails" class="details">
+                <button class="close-btn" onclick="hideDetails('vrDetails')">X</button>
+                <p><b>Definition:</b> Virtual Reality (VR) is a fully immersive experience where users interact with a completely digital environment.</p>
+                <p><b>Recent News:</b> Apple introduced the Vision Pro, a high-end mixed reality headset with advanced eye-tracking and spatial computing.</p>
+                <p><b>Uses:</b> Gaming, training simulations, virtual tourism, therapy.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/HTC_Vive_Pro.jpg" alt="Virtual Reality">
+            </div>
+        </div>
+
+        <div class="section" onclick="showDetails('arDetails')">
+            Augmented Reality (AR)
+            <div id="arDetails" class="details">
+                <button class="close-btn" onclick="hideDetails('arDetails')">X</button>
+                <p><b>Definition:</b> Augmented Reality (AR) enhances the real world by overlaying digital elements onto a live view.</p>
+                <p><b>Recent News:</b> Meta is developing next-generation AR glasses for seamless digital integration.</p>
+                <p><b>Uses:</b> Social media filters, medical training, retail, navigation.</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Augmented_reality_sandbox.jpg" alt="Augmented Reality">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
